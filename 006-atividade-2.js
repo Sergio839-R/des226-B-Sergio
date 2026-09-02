@@ -2,7 +2,7 @@ let entrada = require("prompt-sync")();
 
 console.log("Digite o nome de um jogo:");
 let jogo = entrada();
-console.log("Que nota você da para esse filme (0-10):");
+console.log("Que nota você da para esse jogo (0-10):");
 let nota = entrada();
 console.log("Você recomendaria esse jogo? (sim/não)");
 let recomenda = entrada();
