@@ -59,10 +59,10 @@ if (senhaUs3 == loginSenha) {
   snOk = true;
 }
 
-if (saldoUsuario >= saldoBancario) {
+if (saldoUsuario == true) {
   console.log("Pode sacar!");
   slOk = true;
-} else {
+} else if ((saldoUsuario = true)) {
   console.log("Saldo insuficiente para realizar o saque.");
 }
 
@@ -74,13 +74,13 @@ if (usOk == true) {
 
 if (acessoPermitido == true) {
   console.log("Acesso permitido!");
-} else {
+} else if ((acessoPermitido = true)) {
   console.log("Acesso negado!");
 }
 
-if (saldoPositivo == true) {
+if (saldoUsuario1 == 50) {
   console.log("Permitido sacar!");
-} else {
+} else if ((saldoUsuario1 = 10)) {
   console.log("Não permitido sacar!");
 }
 
