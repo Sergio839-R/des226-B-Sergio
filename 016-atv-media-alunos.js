@@ -1,23 +1,15 @@
 let entrada = require("prompt-sync")();
 
-const media = 6;
-const media2 = 4;
-const media3 = 8;
+const nota1 = parseFloat(entrada("digite a 1º nota: "));
+const nota2 = parseFloat(entrada("digite a 2º nota: "));
+const nota3 = parseFloat(entrada("digite a 3º nota: "));
+
+const media = (nota1 + nota2 + nota3) / 3;
 
 if (media >= 7) {
-  console.log("Nota 1: Foi bem não precisa estudar!");
+  console.log(`Média final: ${media.toFixed(1)} - APROVADO`);
+} else if (media >= 5 && media < 7) {
+  console.log(`Média final: ${media.toFixed(1)} - RECUPERAÇÃO`);
 } else {
-  console.log("Nota 1: Precisa estudar mais!");
-}
-
-if (media2 >= 7) {
-  console.log("Nota 2: Parabéns você passou!");
-} else {
-  console.log("Nota 2: Você foi reprovado!");
-}
-
-if (media3 >= 7) {
-  console.log("Nota 3: Parabéns você passou!");
-} else {
-  console.log("Nota 3: Você foi reprovado!");
+  console.log(`Média final: ${media.toFixed(1)} - REPROVADO`);
 }
